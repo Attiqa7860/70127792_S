@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<style>
+
+body form{
+    background-color: #e0e7e0;
+  
+}
+form {
+    background ;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+
+}
+</style>
+<body>
+    <header>
+        <h1>Attiqa Khan</h1>
+        <nav>
+            <a href="About.html">About Me</a>
+            <a href="Contact.html">Contact Me</a>
+            <a href="Portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+    
+    <section>
+        
+        <h1>User Information Form</h1>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+    
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+    
+            <label for="hobbies">Hobbies:</label><br>
+            <select id="hobbies" name="hobbies" multiple>
+                <option value="reading">Reading</option>
+                <option value="traveling">Traveling</option>
+                <option value="sports">Sports</option>
+                <option value="music">Music</option>
+                <option value="cooking">Cooking</option>
+    
+            </select><br><br>
+    
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+    
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country" required><br><br>
+    
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+     
+    <footer>
+        <p>&copy; AK</p>
+        <p>Follow me on</p>
+        <a href="https://www.linkedin.com/in/attiqa-khan-68a3a3242/">Linkdin</a>
+    </footer>
+    
+</body>
+</html>
