@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+      
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .hobby-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mother-name">Mother's Name:</label>
+        <input type="text" id="mother-name" name="mother-name" required>
+
+        <label for="father-name">Father's Name:</label>
+        <input type="text" id="father-name" name="father-name" required>
+
+        <label for="cnic">CNIC:</label>
+        <input type="text" id="cnic" name="cnic" required pattern="[0-9]{13}" placeholder="1234567890123">
+
+       
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="1">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="1234567890">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="2" required></textarea>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="computer-science">Computer Science</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="biology">Biology</option>
+            <option value="physics">Physics</option>
+        </select>
+
+        <label>Hobbies:</label>
+        <div class="checkbox-group">
+            <label class="hobby-label"><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+            <label class="hobby-label"><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+            <label class="hobby-label"><input type="checkbox" name="hobbies" value="music"> Music</label>
+            <label class="hobby-label"><input type="checkbox" name="hobbies" value="traveling"> Traveling</label>
+            <label class="hobby-label"><input type="checkbox" name="hobbies" value="art"> Art</label>
+            <label class="hobby-label"><input type="checkbox" name="hobbies" value="gaming"> Gaming</label>
+        </div>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
